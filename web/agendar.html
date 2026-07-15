@@ -1,0 +1,48 @@
+<title>Agendar - Cabeleila</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<header id="navbar" class="navbar"></header>
+
+<main class="container">
+  <h1>Novo agendamento</h1>
+  <p class="subtitle">Escolha os servicos, a data e o horario desejado.</p>
+
+  <div id="alert-box" class="alert hidden"></div>
+  <div id="suggestion-banner" class="alert alert-info hidden"></div>
+
+  <div class="card">
+    <form id="appointment-form">
+      <div class="form-group">
+        <label>Servicos</label>
+        <div id="service-list" class="checkbox-list">
+          <p class="text-muted">Carregando servicos...</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="appointment-date">Data</label>
+        <input type="date" id="appointment-date" required />
+      </div>
+
+      <div class="form-group">
+        <label>Horario disponivel</label>
+        <div id="slot-picker">
+          <p class="text-muted">Escolha os servicos e a data para ver os horarios livres.</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="appointment-notes">Observacoes (opcional)</label>
+        <textarea id="appointment-notes" rows="3"></textarea>
+      </div>
+
+      <div class="btn-row">
+        <button type="submit" class="btn-primary" id="submit-btn" disabled>Agendar</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<div id="modal-root"></div>
+
+<script type="module" src="assets/js/controllers/AgendarController.js"></script>

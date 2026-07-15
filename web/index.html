@@ -1,0 +1,16 @@
+<title>Cabeleila</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+<main class="container-narrow" style="text-align:center; padding-top: 4rem;">
+  <p class="text-muted">Redirecionando...</p>
+</main>
+<script type="module">
+  import { isAuthenticated, isStaff, isCustomer } from './assets/js/services/authService.js';
+
+  if (isAuthenticated() && isCustomer()) {
+    window.location.href = 'agendar.html';
+  } else if (isAuthenticated() && isStaff()) {
+    window.location.href = 'staff/agendamentos.html';
+  } else {
+    window.location.href = 'login.html';
+  }
+</script>

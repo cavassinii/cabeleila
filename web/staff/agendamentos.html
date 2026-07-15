@@ -1,0 +1,39 @@
+<title>Agendamentos - Equipe Cabeleila</title>
+<link rel="stylesheet" href="../assets/css/style.css" />
+
+<header id="navbar" class="navbar"></header>
+
+<main class="container">
+  <h1>Agendamentos recebidos</h1>
+  <p class="subtitle">Confirme, altere ou gerencie o status de cada servico.</p>
+
+  <div id="alert-box" class="alert hidden"></div>
+
+  <div class="filters">
+    <div class="form-group">
+      <label for="filter-date">Data</label>
+      <input type="date" id="filter-date" />
+    </div>
+    <div class="form-group">
+      <label for="filter-status">Status</label>
+      <select id="filter-status">
+        <option value="">Todos</option>
+        <option value="PENDING">Pendente</option>
+        <option value="CONFIRMED">Confirmado</option>
+        <option value="IN_PROGRESS">Em andamento</option>
+        <option value="COMPLETED">Concluido</option>
+        <option value="CANCELLED">Cancelado</option>
+      </select>
+    </div>
+    <button type="button" id="filter-btn" class="btn-secondary">Filtrar</button>
+    <button type="button" id="clear-filter-btn" class="btn-secondary">Limpar</button>
+  </div>
+
+  <div class="card">
+    <div id="appointment-list"><p class="text-muted">Carregando...</p></div>
+  </div>
+
+  <div id="detail-card" class="card hidden"></div>
+</main>
+
+<script type="module" src="../assets/js/controllers/StaffAgendamentosController.js"></script>

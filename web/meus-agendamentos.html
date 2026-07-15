@@ -1,0 +1,31 @@
+<title>Meus agendamentos - Cabeleila</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<header id="navbar" class="navbar"></header>
+
+<main class="container">
+  <h1>Meus agendamentos</h1>
+  <p class="subtitle">Historico e detalhes dos seus agendamentos.</p>
+
+  <div id="alert-box" class="alert hidden"></div>
+
+  <div class="filters">
+    <div class="form-group">
+      <label for="filter-from">De</label>
+      <input type="date" id="filter-from" />
+    </div>
+    <div class="form-group">
+      <label for="filter-to">Ate</label>
+      <input type="date" id="filter-to" />
+    </div>
+    <button type="button" id="filter-btn" class="btn-secondary">Filtrar</button>
+  </div>
+
+  <div class="card">
+    <div id="appointment-list"><p class="text-muted">Carregando...</p></div>
+  </div>
+
+  <div id="detail-card" class="card hidden"></div>
+</main>
+
+<script type="module" src="assets/js/controllers/MeusAgendamentosController.js"></script>

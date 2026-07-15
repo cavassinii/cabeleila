@@ -1,0 +1,58 @@
+<title>Entrar - Cabeleila</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<header id="navbar" class="navbar"></header>
+
+<main class="container-narrow">
+  <div class="card">
+    <h1>Bem-vinda(o) de volta</h1>
+    <p class="subtitle">Entre para agendar seus servicos no salao.</p>
+
+    <div id="alert-box" class="alert alert-danger hidden"></div>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="login-password">Senha</label>
+        <input type="password" id="login-password" required autocomplete="current-password" />
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn-primary">Entrar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="card">
+    <h1 style="font-size: 1.1rem;">Ainda nao tem conta?</h1>
+    <form id="register-form">
+      <div class="form-group">
+        <label for="register-name">Nome completo</label>
+        <input type="text" id="register-name" required />
+      </div>
+      <div class="form-group">
+        <label for="register-email">Email</label>
+        <input type="email" id="register-email" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="register-phone">Telefone</label>
+        <input type="text" id="register-phone" required placeholder="(14) 99999-0000" />
+      </div>
+      <div class="form-group">
+        <label for="register-password">Senha</label>
+        <input type="password" id="register-password" required minlength="6" autocomplete="new-password" />
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn-secondary">Criar conta</button>
+      </div>
+    </form>
+  </div>
+
+  <p class="text-muted" style="text-align: center;">
+    E funcionaria do salao? <a href="staff/login.html">Entrar como equipe</a>
+  </p>
+</main>
+
+<script type="module" src="assets/js/controllers/AuthController.js"></script>

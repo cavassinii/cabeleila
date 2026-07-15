@@ -1,0 +1,33 @@
+<title>Entrar - Equipe Cabeleila</title>
+<link rel="stylesheet" href="../assets/css/style.css" />
+
+<header id="navbar" class="navbar"></header>
+
+<main class="container-narrow">
+  <div class="card">
+    <h1>Painel da equipe</h1>
+    <p class="subtitle">Area restrita para a Leila e atendentes.</p>
+
+    <div id="alert-box" class="alert alert-danger hidden"></div>
+
+    <form id="staff-login-form">
+      <div class="form-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="login-password">Senha</label>
+        <input type="password" id="login-password" required autocomplete="current-password" />
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn-primary">Entrar</button>
+      </div>
+    </form>
+  </div>
+
+  <p class="text-muted" style="text-align: center;">
+    E cliente? <a href="../login.html">Entrar como cliente</a>
+  </p>
+</main>
+
+<script type="module" src="../assets/js/controllers/StaffAuthController.js"></script>

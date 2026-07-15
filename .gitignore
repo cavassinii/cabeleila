@@ -1,0 +1,13 @@
+# Configuracao do Claude Code (nao faz parte do projeto)
+.claude/
+
+# Build artifacts .NET (tambem cobertos por api/.gitignore, redundante por seguranca)
+bin/
+obj/
+.vs/
+*.user
+
+# Diversos
+node_modules/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,42 @@
+<title>Desempenho - Equipe Cabeleila</title>
+<link rel="stylesheet" href="../assets/css/style.css" />
+
+<header id="navbar" class="navbar"></header>
+
+<main class="container">
+  <h1>Desempenho semanal</h1>
+  <p class="subtitle">Acompanhamento do negocio semana a semana.</p>
+
+  <div id="alert-box" class="alert hidden"></div>
+
+  <div class="filters">
+    <div class="form-group">
+      <label for="reference-date">Semana que contem</label>
+      <input type="date" id="reference-date" />
+    </div>
+    <button type="button" id="load-btn" class="btn-secondary">Ver semana</button>
+  </div>
+
+  <p class="text-muted" id="week-range"></p>
+
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-value" id="kpi-total">-</div>
+      <div class="kpi-label">Agendamentos na semana</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value" id="kpi-completed">-</div>
+      <div class="kpi-label">Concluidos</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value" id="kpi-cancelled">-</div>
+      <div class="kpi-label">Cancelados</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value" id="kpi-revenue">-</div>
+      <div class="kpi-label">Faturamento (concluidos)</div>
+    </div>
+  </div>
+</main>
+
+<script type="module" src="../assets/js/controllers/StaffDashboardController.js"></script>

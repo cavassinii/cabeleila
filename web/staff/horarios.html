@@ -1,0 +1,24 @@
+<title>Horarios - Equipe Cabeleila</title>
+<link rel="stylesheet" href="../assets/css/style.css" />
+
+<header id="navbar" class="navbar"></header>
+
+<main class="container">
+  <h1>Horario de funcionamento</h1>
+  <p class="subtitle">Define os dias e horarios em que o salao atende. Os agendamentos so podem ser marcados dentro desse expediente.</p>
+
+  <div id="alert-box" class="alert hidden"></div>
+
+  <div class="card">
+    <form id="hours-form">
+      <div id="hours-list">
+        <p class="text-muted">Carregando...</p>
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn-primary">Salvar horarios</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<script type="module" src="../assets/js/controllers/StaffBusinessHoursController.js"></script>
